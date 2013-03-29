@@ -1,0 +1,15 @@
+{
+	"auto_upgrade_last_run": null,
+	"installed_packages":
+	[
+		"Highlight Whitespaces",
+		"JsFormat",
+		"JSHint",
+		"Package Control",
+		"Sass",
+		"SideBarEnhancements",
+		"sublime-better-coffeescript",
+		"SublimeREPL",
+		"TrailingSpaces"
+	]
+}

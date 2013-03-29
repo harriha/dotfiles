@@ -1,0 +1,13 @@
+{
+    // Spaces color is determined by scope (default, "invalid")
+    "highlight_whitespaces_space_highlight_scope_name": "",
+
+    // Tabs color is determined by scope (default, "invalid")
+    "highlight_whitespaces_tab_highlight_scope_name": "invalid",
+
+    // Max file size to search
+    "highlight_whitespaces_file_max_size": 1048576,
+
+    // By default plugin is enabled or disabled (true|false)
+    "highlight_whitespaces_enabled": true
+}

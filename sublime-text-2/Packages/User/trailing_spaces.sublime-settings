@@ -1,0 +1,5 @@
+{
+    "trailing_spaces_highlight_color": "comment",
+    "trailing_spaces_include_current_line": false,
+    "trailing_spaces_include_empty_lines": false
+}

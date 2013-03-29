@@ -1,0 +1,6 @@
+[
+    {
+        "keys": ["super+alt+w"],
+        "command": "hws_toggle_whitespaces"
+    }
+]

@@ -1,0 +1,6 @@
+[
+	{
+		"caption": "Highlight Whitespaces: Toggle",
+		"command": "hws_toggle_whitespaces"
+	}
+]

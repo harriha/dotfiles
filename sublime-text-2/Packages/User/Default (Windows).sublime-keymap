@@ -1,0 +1,15 @@
+[
+    // Make tab switching behave as in the browser
+    { "keys": ["ctrl+tab"], "command": "next_view" },
+    { "keys": ["ctrl+shift+tab"], "command": "prev_view" },
+    {
+    "keys": ["ctrl+shift+t"],
+    "command": "run_multiple",
+    "args": {
+      "commands": [
+        {"command": "delete_trailing_spaces", "args": null, "context": "window"},
+        {"command": "expand_tabs", "args": null, "context": "window"}
+      ]
+    }
+  }
+]
