@@ -1,0 +1,22 @@
+[user]
+	name = harriha
+	email = harri.halikka@gmail.com
+[push]
+	default = tracking
+[core]
+	safecrlf = false
+	autocrlf = true
+	editor = 'C:/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin
+	excludesfile = ~/.gitignore
+
+[branch]
+	autosetuprebase = always
+
+[alias]
+  st = status
+  ci = commit
+  br = branch
+  co = checkout
+  df = diff
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+
