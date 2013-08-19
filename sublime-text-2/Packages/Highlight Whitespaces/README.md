@@ -1,6 +1,6 @@
 ## Synopsis
 
-This is a [Sublime Text 2](http://www.sublimetext.com/2) plugin.
+This is a plugin for [Sublime Text 2](http://www.sublimetext.com/2) and [3](http://www.sublimetext.com/3).
 
 **Highlight whitespaces in documents**
 
@@ -20,6 +20,8 @@ Then clone this repository:
 ```git clone git://github.com/disq/HighlightWhitespaces.git```
 
 That's it!
+
+Note for ST3 users: For Sublime Text 3, replace "2" with "3" in path names. (`%APPDATA%\Sublime Text 3` and so on)
 
 ## Options
 

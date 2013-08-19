@@ -56,11 +56,11 @@ def highlight_whitespaces(view):
     if view.size() <= max_size and not is_find_results(view):
         space_regions = find_whitespaces_spaces(view)
         view.add_regions('WhitespacesHighlightListener',
-                         space_regions, space_scope_name,
+                         space_regions, space_scope_name, '',
                          sublime.DRAW_EMPTY)
         tab_regions = find_whitespaces_tabs(view)
         view.add_regions('WhitespacesHighlightListener2',
-                         tab_regions, tab_scope_name,
+                         tab_regions, tab_scope_name, '',
                          sublime.DRAW_EMPTY)
 
 
