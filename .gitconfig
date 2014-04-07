@@ -12,6 +12,9 @@
 [branch]
 	autosetuprebase = always
 
+[rebase]
+	autosquash = true
+
 [alias]
   st = status
   ci = commit
