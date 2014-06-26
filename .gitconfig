@@ -24,7 +24,9 @@
   logf = "log --follow"
   lg = log --graph --pretty=format:'%C(green ul)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
   activity = for-each-ref --sort=-committerdate refs/heads/ --format='%(committerdate:short) %(authorname) %(refname:short)'
-
+  summary = show --pretty="format:" --name-only
+  gg = !git grep -i
+  
 [color "status"]
     changed = blue
     untracked = red reverse
