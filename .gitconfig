@@ -28,5 +28,5 @@
   gg = !git grep -i
   
 [color "status"]
-    changed = blue
+    changed = blue rever white
     untracked = red reverse
