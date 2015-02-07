@@ -2,7 +2,7 @@
 	name = harriha
 	email = harri.halikka@gmail.com
 [push]
-	default = tracking
+	default = upstream
 [core]
 	safecrlf = false
 	autocrlf = true
