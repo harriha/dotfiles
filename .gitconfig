@@ -5,8 +5,9 @@
 	default = upstream
 [core]
 	safecrlf = false
-	autocrlf = true
-	editor = 'C:/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin
+	autocrlf = input
+#	editor = 'C:/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin
+  editor = 'C:/Program Files/Sublime Text 3/sublime_text.exe' --multiinstance
 	excludesfile = ~/.gitignore
 
 [branch]
@@ -28,5 +29,5 @@
   gg = !git grep -i
   
 [color "status"]
-    changed = blue rever white
+    changed = blue reverse white
     untracked = red reverse
