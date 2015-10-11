@@ -20,7 +20,7 @@
   st = status
   ci = commit
   br = branch
-  co = checkout
+  ch = checkout
   df = diff
   logf = "log --follow"
   lg = log --graph --pretty=format:'%C(green ul)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
