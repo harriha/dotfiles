@@ -16,6 +16,9 @@
 [rebase]
 	autosquash = true
 
+[pull]
+  rebase = true
+
 [alias]
   st = status
   ci = commit
