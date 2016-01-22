@@ -1,0 +1,11 @@
+// VS Code user settings
+// Place your settings in this file to overwrite the default settings
+{
+    "editor.fontSize": 11,
+    "editor.wrappingColumn": 0,
+    "editor.mouseWheelScrollSensitivity": 2,
+    "editor.renderWhitespace": true,
+    "files.trimTrailingWhitespace": true,
+    "explorer.workingFiles.maxVisible": 15,
+    "files.insertFinalNewline": true,
+}
