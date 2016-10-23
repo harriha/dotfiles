@@ -17,20 +17,28 @@
 	autosquash = true
 
 [pull]
-  rebase = preserve
+	rebase = preserve
 
 [alias]
-  st = status
-  ci = commit
-  br = branch
-  ch = checkout
-  df = diff
-  logf = "log --follow"
-  lg = log --graph --pretty=format:'%C(green ul)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-  activity = for-each-ref --sort=-committerdate refs/heads/ --format='%(committerdate:short) %(authorname) %(refname:short)'
-  summary = show --pretty="format:" --name-only
-  gg = !git grep -i
+	st = status
+	ci = commit
+	br = branch
+	ch = checkout
+	df = diff
+	logf = "log --follow"
+	lg = log --graph --pretty=format:'%C(green ul)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	activity = for-each-ref --sort=-committerdate refs/heads/ --format='%(committerdate:short) %(authorname) %(refname:short)'
+	summary = show --pretty="format:" --name-only
+	gg = !git grep -i
+	fix = commit --fixup
+	coa = commit --amend --no-edit
+	cleanup = "!git branch --merged master | grep  -v '\\*\\|master' | xargs -n 1 git branch -d"
   
 [color "status"]
-    changed = blue reverse white
-    untracked = red reverse
+	changed = cyan
+	untracked = red reverse cyan
+[color "diff"]
+	old = red reverse cyan
+
+[help]
+	autocorrect = 20
