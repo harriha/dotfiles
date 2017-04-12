@@ -2,5 +2,6 @@ nbproject
 *.pro.user
 *.sublime-project
 *.sublime-workspace
+*.vscode
 
 node_modules/
