@@ -4,6 +4,10 @@ alias subl='/c/Program\ Files/Sublime\ Text\ 3/sublime_text.exe'
 alias chrome='/c/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe'
 alias code='/c/Program\ Files\ \(x86\)/Microsoft\ VS\ Code/code.exe'
 
+function perf {
+  curl -o /dev/null -s -k -w "%{time_connect} + %{time_starttransfer} = %{time_total}\n" "$1"
+}
+
 # Auto-complete SSH hosts
 #   From https://gist.github.com/aliang/1024466
 _complete_ssh_hosts ()
@@ -24,3 +28,10 @@ _complete_ssh_hosts ()
         return 0
 }
 complete -F _complete_ssh_hosts ssh
+
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+
+export FORCE_COLOR=true
+
