@@ -1,57 +1,57 @@
 [user]
-	name = harriha
-	email = harri.halikka@gmail.com
+    name = harriha
+    email = harri.halikka@gmail.com
 [push]
-	default = upstream
+    default = upstream
 [core]
-	safecrlf = false
-	autocrlf = input
+    safecrlf = false
+    autocrlf = input
 #	editor = 'C:/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin
 #	editor = 'C:/Program Files/Sublime Text 3/sublime_text.exe' --wait --multiinstance
-	excludesfile = ~/.gitignore
+    excludesfile = ~/.gitignore
 
 [branch]
-	autosetuprebase = always
+    autosetuprebase = always
 
 [rebase]
-	autosquash = true
+    autosquash = true
 
 [pull]
-	rebase = preserve
+    rebase = preserve
 
 [alias]
-	st = status
-	ci = commit
-	br = branch
-	ch = checkout
-	df = diff
-	logf = "log --follow"
-	lg = log --graph --pretty=format:'%C(green ul)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-	lg5 = log --graph --pretty=format:'%C(green ul)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(reverse blue white)<%an>%Creset' --abbrev-commit --date=relative -n 5
-	lgs = log --pretty=format:'%Cgreen%cd%Creset - %s %C(yellow)%d%Creset %C(blue)<%an>%Creset' --abbrev-commit --author=harri --date=short
+    st = status
+    ci = commit
+    br = branch
+    ch = checkout
+    df = diff
+    logf = "log --follow"
+    lg = log --graph --pretty=format:'%C(green ul)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    lg5 = log --graph --pretty=format:'%C(green ul)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(reverse blue white)<%an>%Creset' --abbrev-commit --date=relative -n 5
+    lgs = log --pretty=format:'%Cgreen%cd%Creset - %s %C(yellow)%d%Creset %C(blue)<%an>%Creset' --abbrev-commit --author=harri --date=short
 
-	# Show only list of files with changes of the given commit (or HEAD by default)
-	shows = show --stat --oneline
+    # Show only list of files with changes of the given commit (or HEAD by default)
+    shows = show --stat --oneline
 
-	# https://smartapps.egeniq.com/generating-a-changelog-based-on-merge-commits-b4b3445c9af3
-	since-last-tag = !git lg $(git describe --abbrev=0 --tags).. --merges --pretty=format:'%s \n%b'
+    # https://smartapps.egeniq.com/generating-a-changelog-based-on-merge-commits-b4b3445c9af3
+    since-last-tag = !git lg $(git describe --abbrev=0 --tags).. --merges --pretty=format:'%s \n%b'
 
-        activity = for-each-ref --count 20 --sort=-committerdate refs/heads/ --format='%(committerdate:short) %(authorname) %(refname:short)'
-	summary = show --pretty="format:" --name-only
-	gg = !git grep -i
-	fix = commit --fixup
-	coa = commit --amend --no-edit
-	cleanup = "!git branch --merged master | grep  -v '\\*\\|master' | xargs -n 1 git branch -d"
-  	pushf = push --force-with-lease
+    activity = for-each-ref --count 20 --sort=-committerdate refs/heads/ --format='%(committerdate:short) %(authorname) %(refname:short)'
+    summary = show --pretty="format:" --name-only
+    gg = !git grep -i
+    fix = commit --fixup
+    coa = commit --amend --no-edit
+    cleanup = "!git branch --merged master | grep  -v '\\*\\|master' | xargs -n 1 git branch -d"
+    pushf = push --force-with-lease
 
 [color "status"]
-	changed = cyan
-	untracked = red reverse cyan
+    changed = cyan
+    untracked = red reverse cyan
 [color "diff"]
-	old = red reverse cyan
+    old = red reverse cyan
 
 [help]
-	autocorrect = 20
+    autocorrect = 20
 
 [remote "origin"]
-	prune = true
+    prune = true

@@ -3,6 +3,5 @@
 [
 	{ "key": "ctrl+,",                "command": "workbench.action.quickOpen" },
 	{ "key": "ctrl+e c",                "command": "editor.action.commentLine" },
-	{ "key": "ctrl+q",                "command": "workbench.action.cycleEditor" },
 	{ "key": "alt+s",               "command": "workbench.action.splitEditor" },
 ]
