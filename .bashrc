@@ -49,6 +49,9 @@ alias yarni='YARN_CHECKSUM_BEHAVIOR=ignore yarn'
 # https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly
 export DOCKER_HOST=tcp://localhost:2375
 
+# https://devblogs.microsoft.com/commandline/sharing-ssh-keys-between-windows-and-wsl-2/
+eval `keychain --agents ssh --eval id_rsa`
+# ...or the next option
 
 # From https://github.com/abergs/ubuntuonwindows#2-start-an-bash-ssh-agent-on-launch
 # Set up ssh-agent
