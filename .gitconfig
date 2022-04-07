@@ -46,6 +46,8 @@
     pushf = push --force-with-lease
     delbr = branch -D
     newbr = checkout -b
+    p = pull
+
 
 [color "status"]
     changed = cyan
