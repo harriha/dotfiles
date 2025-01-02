@@ -18,14 +18,15 @@
     autosquash = true
 
 [pull]
-    rebase = preserve
+    rebase = merges
 
 [alias]
     st = status
     ci = commit
     br = branch
     ch = checkout
-    df = diff
+    cp = cherry-pick
+    d = diff
     logf = "log --follow"
     lg = log --graph --pretty=format:'%C(green ul)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
     lg5 = log --graph --pretty=format:'%C(green ul)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(reverse blue white)<%an>%Creset' --abbrev-commit --date=relative -n 5
@@ -47,7 +48,13 @@
     delbr = branch -D
     newbr = checkout -b
     p = pull
+    ra = rebase --abort
+    rc = rebase --continue
+    ds = diff --staged
 
+    # https://stackoverflow.com/questions/11269256/how-do-i-name-and-retrieve-a-git-stash-by-name#comment114678780_50727614
+    stashput = "!f() { git stash push -m "stash_name_$1"; }; f"
+    stashget = "!f() { git stash apply $(git stash list | grep 'stash_name_$1' | cut -d: -f1); }; f"
 
 [color "status"]
     changed = cyan
