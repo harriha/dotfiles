@@ -6,8 +6,17 @@
 # See https://github.com/rprichard/winpty/issues/103 for addition switches
 alias inpm='winpty npm.cmd'
 
-alias ll='ls -la'
-alias ls='ls -hF --color=tty'
+# alias ls='ls -hF --color=tty'
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+alias y='yarn'
+
+alias igt='git'
+alias itg='git'
+alias tgi='git'
+alias tig='git'
+alias g='git'
 
 #alias code='/c/Users/hhal/AppData/Local/Programs/Microsoft\ VS\ Code/Code.exe'
 #alias code='/c/Program\ Files/Microsoft\ VS\ Code/code.exe'
