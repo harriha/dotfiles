@@ -95,3 +95,6 @@ export WINHOME=$(wslpath $(cmd.exe /C "echo %USERPROFILE%" 2>/dev/null) | tr -d 
 if [ -f "$WINHOME/.bash_aliases_wsl" ]; then
     . "$WINHOME/.bash_aliases_wsl"
 fi
+
+# https://consoledonottrack.com/
+export DO_NOT_TRACK=1
